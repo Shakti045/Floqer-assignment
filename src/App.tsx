@@ -3,6 +3,7 @@ import { salarydata } from './data/salaries'
 import { AggregatedData, FinalData } from './types';
 import DataTable from './components/DataTable';
 import Visualize from './components/Visualize';
+import ChatBot from './components/ChatBot';
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
     <div className=' h-[100vh]'>
       <DataTable finaldata = {finaldata}/>
       <Visualize finaldata = {finaldata}/>
+      <ChatBot/>
     </div>
   )
 }
